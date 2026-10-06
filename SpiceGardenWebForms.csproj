@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A7A3A391-3B65-4D0D-8B18-8B0E4B5F7D42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SpiceGardenWebForms</RootNamespace>
+    <AssemblyName>SpiceGardenWebForms</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseWdtDefault>False</UseWdtDefault>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs" />
+    <Compile Include="Site.Master.cs" />
+    <Compile Include="Default.aspx.cs" />
+    <Compile Include="Menu.aspx.cs" />
+    <Compile Include="Login.aspx.cs" />
+    <Compile Include="Register.aspx.cs" />
+    <Compile Include="Cart.aspx.cs" />
+    <Compile Include="Checkout.aspx.cs" />
+    <Compile Include="MyOrders.aspx.cs" />
+    <Compile Include="Reservation.aspx.cs" />
+    <Compile Include="Admin\AdminDashboard.aspx.cs" />
+    <Compile Include="Admin\Categories.aspx.cs" />
+    <Compile Include="Admin\MenuManagement.aspx.cs" />
+    <Compile Include="Admin\Orders.aspx.cs" />
+    <Compile Include="Admin\Reservations.aspx.cs" />
+    <Compile Include="Admin\Users.aspx.cs" />
+    <Compile Include="Models\*.cs" />
+    <Compile Include="BLL\*.cs" />
+    <Compile Include="DAL\*.cs" />
+    <Compile Include="**\*.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Global.asax" />
+    <Content Include="Site.Master" />
+    <Content Include="Default.aspx" />
+    <Content Include="Menu.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Cart.aspx" />
+    <Content Include="Checkout.aspx" />
+    <Content Include="MyOrders.aspx" />
+    <Content Include="Reservation.aspx" />
+    <Content Include="Admin\*.aspx" />
+    <Content Include="Content\site.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

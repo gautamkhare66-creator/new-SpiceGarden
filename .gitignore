@@ -1,0 +1,31 @@
+# Visual Studio
+.vs/
+*.vs
+*.vcxproj.user
+*.suo
+*.userosscache
+*.userprefs
+*.binlog
+
+# Build results
+bin/
+obj/
+Debug/
+Release/
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+*.log
+
+# Local configuration
+App_Data/
+Web.config.user
+
+# IDE files
+*.pdb
+*.cache
+*.dbmdl
+*.dbproj.schemaview
+*.jfm

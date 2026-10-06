@@ -1,0 +1,23 @@
+Users
+  |
+  | 1-to-many
+  v
+Orders
+  |
+  | 1-to-many
+  v
+OrderItems
+  ^
+  | many-to-one
+  |
+MenuItems
+  ^
+  | many-to-one
+  |
+Categories
+
+Users
+  |
+  | 1-to-many
+  v
+Reservations
